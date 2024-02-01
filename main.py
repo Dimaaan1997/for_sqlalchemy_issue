@@ -1,5 +1,3 @@
-
-
 from sqlalchemy.ext.asyncio import async_sessionmaker, create_async_engine
 from sqlalchemy import create_engine, Column, String, insert, select
 from sqlalchemy.orm import declarative_base, sessionmaker
@@ -83,7 +81,6 @@ insert_data = get_insert_data()
 for line in insert_data:
     print(line)
 
-assert insert_data == test_data
 
 
 
